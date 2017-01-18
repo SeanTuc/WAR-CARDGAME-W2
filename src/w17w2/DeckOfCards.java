@@ -54,7 +54,7 @@ public class DeckOfCards {
     }
     
     /**
-     * This method will deal the top card off the deck
+     * This method will deal the top card off the deck and
      */
     public Card dealTopCard()
     {

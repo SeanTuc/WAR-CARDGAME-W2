@@ -16,7 +16,7 @@ public class W17W2 {
      */
     public static void main(String[] args) {
         
-        System.out.printf("hello Git hub");
+        System.out.printf("hello Git hub ");
         // TODO code application logic here
     }
     

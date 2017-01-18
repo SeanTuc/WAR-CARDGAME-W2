@@ -21,5 +21,19 @@ public class GameOfWar {
         
         DeckOfCards theDeck = new DeckOfCards();
         theDeck.shuffle();
+        
+        dealTheCards(theDeck);
+        
+    }// end of the constructor
+    
+    private void dealTheCards(DeckOfCards theDeck)
+    {
+        for(int cardNum = 0; cardNum < 52; cardNum ++)
+        {
+            if (cardNum % 2 == 0)
+                p1Hand.add(theDeck.dealTopCard());
+            else 
+                p2Hand.add(theDeck.dealTopCard());
+        }
     }
 }

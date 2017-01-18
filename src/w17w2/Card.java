@@ -58,7 +58,10 @@ public class Card {
             throw new IllegalArgumentException("suit must be hearts, diamonds, clubs "
                                                 + "or spades");
     }
-
+/**
+ * This method returns the face value of the card
+ * @return an INT 2-14
+ */
     public String getFaceName() {
         return faceName;
     }

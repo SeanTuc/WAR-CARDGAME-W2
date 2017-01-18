@@ -6,7 +6,7 @@ import java.util.Collections;
 
 /**
  *
- * @author Sean
+ * @author Sean Tucker
  */
 public class DeckOfCards {
     private ArrayList<Card> deck;

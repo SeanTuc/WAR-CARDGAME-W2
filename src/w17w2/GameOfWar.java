@@ -41,6 +41,8 @@ public class GameOfWar {
     {
         while(!p1Hand.isEmpty() && !p2Hand.isEmpty())
         {
+            System.out.println(p1Hand.size());
+            System.out.println(p2Hand.size());
             playHand();
         }
         
@@ -55,6 +57,8 @@ public class GameOfWar {
         Card p1Card = p1Hand.remove(0);
         Card p2Card = p1Hand.remove(0);
         // player 2 wins hand
+        System.out.printf("Player 1 : %s cards in hand: %d %n", p1Card, p1Hand.size());
+        System.out.printf("Player 2 : %s cards in hand: %d %n", p2Card, p2Hand.size());
         if (p1Card.getFaceValue() > p2Card.getFaceValue())
         {
             p1Hand.add(p1Card);
@@ -81,17 +85,20 @@ public class GameOfWar {
      */
     private void playWarHand(ArrayList<Card> warPile)
     {
+        System.out.println("WAR!!!!!!");
         if(p1Hand.size() < 3)
         {
             p2Hand.addAll(p1Hand);
             p1Hand.clear();
             p2Hand.addAll(warPile);
+            return;
         }
                 if(p2Hand.size() < 3)
         {
             p1Hand.addAll(p1Hand);
             p2Hand.clear();
             p1Hand.addAll(warPile);
+            return;
         }
         warPile.add(p1Hand.remove(0));
         warPile.add(p1Hand.remove(0));

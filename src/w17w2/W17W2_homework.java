@@ -14,6 +14,7 @@ public class W17W2_homework {
         public static void main(String[] args)
         {
             System.out.println("Hello World, my GitHub account name is SeanTuc");
+            System.out.println("update check");
         }
     
     

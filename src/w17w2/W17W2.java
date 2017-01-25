@@ -18,6 +18,8 @@ public class W17W2 {
         
         System.out.printf("hello Git hub ");
         // TODO code application logic here
+        GameOfWar theGame = new GameOfWar();
+        theGame.playWar();
     }
     
 }
